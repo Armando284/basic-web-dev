@@ -37,13 +37,26 @@
     border-radius: 5px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;*/
+}
+
+.input_leftside {
+    width: 90%;
+}
+
+.btn_aceptar {
+width: 20%;
 }
 
 .input_leftside, .btn_aceptar {
-    margin: 20px 10px;
-    width: 140px;
+    display: block;
+    /*margin: 20px 10px;*/
+    /*width: 140px;*/
     height: 20px;
     border-radius: 5px;
     border: none;
