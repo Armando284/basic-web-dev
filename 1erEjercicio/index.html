@@ -11,11 +11,17 @@
     <div class="container">
       <div class="card first-card">
         <div class="input-group">
-          <input type="text" id="task" placeholder="Añade una tarea ..." />
-          <button id="add-task">Añadir</button>
+          <input type="text" id="add-task" placeholder="Añade una tarea ..." />
+          <button id="submit-task">Añadir</button>
+          <br>
+          <small id="error-msg" class="not-visible">No se puede añadir una tarea vacia</small>
         </div>
       </div>
       <div class="card second-card">
+        <div class="button-group">
+          <button id="cargar">Cargar</button>
+          <button id="guardar">Guardar</button>
+        </div>
         <ol id="list-tasks"></ol>
       </div>
     </div>

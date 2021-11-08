@@ -28,13 +28,38 @@
   align-items: center;
   justify-content: center;
 }
-.first-card > .input-group > input,
-.first-card > .input-group > button {
+input,button {
   max-height: 44px;
   border-radius: 10px;
   border: var(--secondary-color) 1px solid;
   padding: 4px 16px;
 }
-.first-card > .input-group > button {
+button {
   cursor: pointer;
+}
+#error-msg{
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: #e74747;
+}
+.not-visible{
+  display: none;
+}
+.button-group{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.button-group>button:nth-of-type(1){
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button-group>button:nth-of-type(2){
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: var(--primary-color);
+  color: var(--main-bg);
 }
