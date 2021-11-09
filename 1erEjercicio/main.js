@@ -1,36 +1,33 @@
 const btnAceptar = document.querySelector('.btn_aceptar');
-const btnBorra = document.querySelector('.btn_borra');
 const input = document.querySelector('.input_leftside');
 const cardR = document.querySelector('#cardRight_Text');
 const mensajeEror = document.querySelector('.msnError')
-const cardList = document.querySelector('.cardList')
 
-const MostrarLista = [];
+const array = [];
 
 btnAceptar.addEventListener('click', acepta)
-btnBorra.addEventListener('click', borra)
 
 
 
 function acepta () {
     if (input.value === '') {
-        mensajeEror.textContent = ('Usted debe Escribir una informacion');
+        mensajeEror.textContent = ('Ustede debe Escribir una informacion');
     } else {
-        cardR.textContent = input.value;
-        /*const newText = document.createElement("li");
-        const cardR = document.createElement("li");
-        cardR.textContent = input.value;
-        const cardText = document.querySelector('.cardText');
-        cardText.appendChild(cardR);*/
+        const text = input.value;
+
+        const li = document.createElement('li');
+        li.textContent = text;
+
+        cardR.appendChild(li);
+        li.style.listStyle = 'none'
+        li.style.marginLeft = '10px'
+
+        array.push(input.value);
     }    
 }
 
-/*function addNewElement (acepta) {
-    MostrarLista.push(acepta)
-}*/
-
 function borra () {
-    input.value = ""
     cardR.textContent = ""
+    input.value = ""
     mensajeEror.textContent = ""
 }
