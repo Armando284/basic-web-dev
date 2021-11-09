@@ -49,11 +49,14 @@
     width: 90%;
 }
 
-.btn_aceptar {
+.btn_aceptar, .btn_borra {
 width: 20%;
+margin-bottom: 10px;
 }
 
-.input_leftside, .btn_aceptar {
+
+
+.input_leftside, .btn_aceptar, .btn_borra {
     display: block;
     /*margin: 20px 10px;*/
     /*width: 140px;*/
